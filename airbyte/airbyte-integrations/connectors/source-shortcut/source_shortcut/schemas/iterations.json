@@ -1,0 +1,119 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "An Epic is a collection of stories that together might make up a release, a milestone, or some other large initiative that you are working on.",
+  "type": "object",
+  "properties": {
+    "app_url": {
+      "description": "The Shortcut application url for the Epic.",
+      "type": ["null", "string"]
+    },
+    "entity_type": {
+      "description": "The Epic's description.",
+      "type": ["null", "string"]
+    },
+    "labels": {
+      "description": "True/false boolean that indicates whether the Epic is archived or not.",
+      "type": ["null", "object"]
+    },
+    "mention_ids": {
+      "description": "Deprecated: use member_mention_ids.",
+      "type": ["null", "object"]
+    },
+    "member_mention_ids": {
+      "description": "An array of Member IDs that have been mentioned in the Epic description.",
+      "type": ["null", "object"]
+    },
+    "name": {
+      "description": "An array of Labels attached to the Epic.",
+      "type": ["null", "string"]
+    },
+    "label_ids": {
+      "description": "Deprecated: use member_mention_ids.",
+      "type": ["null", "object"]
+    },
+    "updated_at": {
+      "description": "The time/date the Epic was updated.",
+      "type": ["null", "string"],
+      "format": "date-time",
+      "x-nullable": true
+    },
+    "group_mention_ids": {
+      "description": "An array of Group IDs that have been mentioned in the Epic description.",
+      "type": ["null", "object"]
+    },
+    "end_date": {
+      "description": "The time/date the Epic was updated.",
+      "type": ["null", "string"],
+      "format": "date-time",
+      "x-nullable": true
+    },
+    "follower_ids": {
+      "description": "An array of Group IDs that have been mentioned in the Epic description.",
+      "type": ["null", "object"]
+    },
+    "group_ids": {
+      "description": "An array of Group IDs that have been mentioned in the Epic description.",
+      "type": ["null", "object"]
+    },
+    "start_date": {
+      "description": "The time/date the Epic was started.",
+      "type": ["null", "string"],
+      "format": "date-time",
+      "x-nullable": true
+    },
+    "status": {
+      "description": "The time/date the Epic was completed.",
+      "type": ["null", "string"]
+    },
+    "id": {
+      "description": "The name of the Epic.",
+      "type": ["null", "integer"]
+    },
+    "stats": {
+      "type": ["null", "object"],
+      "properties": {
+        "num_points_done": {
+          "type": ["null", "integer"]
+        },
+        "num_related_documents": {
+          "type": ["null", "integer"]
+        },
+        "average_cycle_time": {
+          "type": ["null", "integer"]
+        },
+        "num_stories_unstarted": {
+          "type": ["null", "integer"]
+        },
+        "num_points_started": {
+          "type": ["null", "integer"],
+          "format": "date-time"
+        },
+        "num_points_unstarted": {
+          "type": ["null", "integer"],
+          "format": "date-time"
+        },
+        "num_stories_started": {
+          "type": ["null", "integer"]
+        },
+        "num_stories_unestimated": {
+          "type": ["null", "integer"]
+        },
+        "average_lead_time": {
+          "type": ["null", "integer"]
+        },
+        "num_points": {
+          "type": ["null", "integer"]
+        },
+        "num_stories_done": {
+          "type": ["null", "integer"]
+        }
+      }
+    },
+    "created_at": {
+      "description": "The time/date the Epic was created.",
+      "type": ["null", "string"],
+      "format": "date-time",
+      "x-nullable": true
+    }
+  }
+}

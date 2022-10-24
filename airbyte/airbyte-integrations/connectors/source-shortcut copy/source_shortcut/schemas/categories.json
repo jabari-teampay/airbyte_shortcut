@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "archived": {
+      "description": "A true/false boolean indicating if the Category has been archived.",
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "entity_type": {
+      "description": "A string description of this resource.",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "color": {
+      "description": "The hex color to be displayed with the Category (for example, \"#ff0000\").",
+      "pattern": "^#[a-fA-F0-9]{6}$",
+      "format": "css-color",
+      "minLength": 1,
+      "type": [
+        "null",
+        "string"
+      ],
+      "x-nullable": true
+    },
+    "name": {
+      "description": "The name of the Category.",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "type": {
+      "description": "The type of entity this Category is associated with; currently Milestone is the only type of Category.",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "updated_at": {
+      "description": "The time/date that the Category was updated.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "external_id": {
+      "description": "This field can be set to another unique ID. In the case that the Category has been imported from another tool, the ID in the other tool can be indicated here.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "x-nullable": true
+    },
+    "id": {
+      "description": "The unique ID of the Category.",
+      "type": [
+        "null",
+        "integer"
+      ],
+      "format": "int64"
+    },
+    "created_at": {
+      "description": "The time/date that the Category was created.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    }
+  }
+}

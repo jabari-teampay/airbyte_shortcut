@@ -1,0 +1,98 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "app_url": {
+            "description": "The Shortcut application url for the Label.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "description": {
+            "description": "The description of the Label.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "x-nullable": true
+        },
+        "archived": {
+            "description": "A true/false boolean indicating if the Label has been archived.",
+            "type": "boolean"
+        },
+        "entity_type": {
+            "description": "A string description of this resource.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "color": {
+            "description": "The hex color to be displayed with the Label (for example, \"#ff0000\").",
+            "pattern": "^#[a-fA-F0-9]{6}$",
+            "format": "css-color",
+            "minLength": 1,
+            "type": [
+                "null",
+                "string"
+            ],
+            "x-nullable": true
+        },
+        "name": {
+            "description": "The name of the Label.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "global_id": {
+            "x-doc-skip": true,
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "updated_at": {
+            "description": "The time/date that the Label was updated.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        },
+        "external_id": {
+            "description": "This field can be set to another unique ID. In the case that the Label has been imported from another tool, the ID in the other tool can be indicated here.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "x-nullable": true
+        },
+        "id": {
+            "description": "The unique ID of the Label.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64"
+        },
+        "stats": {
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "created_at": {
+            "description": "The time/date that the Label was created.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        }
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "entity_type": {
+            "description": "A string description of this resource.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "name": {
+            "description": "The shorthand name of the VCS repository.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "x-nullable": true
+        },
+        "type": {
+            "description": "The type of Repository. Currently this can only be \"github\".",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "updated_at": {
+            "description": "The time/date the Repository was updated.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        },
+        "external_id": {
+            "description": "The VCS unique identifier for the Repository.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "x-nullable": true
+        },
+        "id": {
+            "description": "The ID associated to the VCS repository in Shortcut.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64",
+            "x-nullable": true
+        },
+        "url": {
+            "description": "The URL of the Repository.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "x-nullable": true
+        },
+        "full_name": {
+            "description": "The full name of the VCS repository.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "x-nullable": true
+        },
+        "created_at": {
+            "description": "The time/date the Repository was created.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        }
+    }
+}

@@ -1,0 +1,197 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "role": {
+            "description": "The Member's role in the Workspace.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "entity_type": {
+            "description": "A string description of this resource.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "disabled": {
+            "description": "True/false boolean indicating whether the Member has been disabled within the Workspace.",
+            "type": [
+                "null",
+                "boolean"
+            ]
+        },
+        "global_id": {
+            "x-doc-skip": true,
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "state": {
+            "description": "The user state, one of partial, full, disabled, or imported.  A partial user is disabled, has no means to log in, and is not an import user.  A full user is enabled and has a means to log in.  A disabled user is disabled and has a means to log in.  An import user is disabled, has no means to log in, and is marked as an import user.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "enum": [
+                "partial",
+                "full",
+                "disabled",
+                "imported"
+            ]
+        },
+        "updated_at": {
+            "description": "The time/date the Member was last updated.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        },
+        "created_without_invite": {
+            "description": "Whether this member was created as a placeholder entity.",
+            "x-doc-skip": true,
+            "type": [
+                "null",
+                "boolean"
+            ]
+        },
+        "group_ids": {
+            "description": "The Member's group ids",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "id": {
+            "description": "The Member's ID in Shortcut.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "uuid"
+        },
+        "profile": {
+            "items": {
+                "properties": {
+                    "entity_type": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "deactivated": {
+                        "type": [
+                            "null",
+                            "boolean"
+                        ]
+                    },
+                    "two_factor_auth_activated": {
+                        "type": [
+                            "null",
+                            "boolean"
+                        ]
+                    },
+                    "mention_name": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "name": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "gravatar_hash": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "id": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "display_icon": {
+                        "items": {
+                            "properties": {
+                                "entity_type": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
+                                "id": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
+                                "created_at": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ],
+                                    "format": "date-time"
+                                },
+                                "updated_at": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ],
+                                    "format": "date-time"
+                                },
+                                "url": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                }
+                            },
+                            "type": [
+                                "null",
+                                "object"
+                            ]
+                        },
+                        "type": [
+                            "null",
+                            "object"
+                        ]
+                    },
+                    "email_address": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    }
+                },
+                "type": [
+                    "null",
+                    "object"
+                ]
+            },
+            "type": [
+                "null",
+                "object"
+            ]
+        },
+        "created_at": {
+            "description": "The time/date the Member was created.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        }
+    }
+}

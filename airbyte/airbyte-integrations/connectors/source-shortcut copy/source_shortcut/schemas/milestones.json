@@ -1,0 +1,145 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "app_url": {
+            "description": "The Shortcut application url for the Milestone.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "description": {
+            "description": "The Milestone's description.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "started": {
+            "description": "A true/false boolean indicating if the Milestone has been started.",
+            "type": [
+                "null",
+                "boolean"
+            ]
+        },
+        "entity_type": {
+            "description": "A string description of this resource.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "completed_at_override": {
+            "description": "A manual override for the time/date the Milestone was completed.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        },
+        "started_at": {
+            "description": "The time/date the Milestone was started.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        },
+        "completed_at": {
+            "description": "The time/date the Milestone was completed.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        },
+        "name": {
+            "description": "The name of the Milestone.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "global_id": {
+            "x-doc-skip": true,
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "completed": {
+            "description": "A true/false boolean indicating if the Milestone has been completed.",
+            "type": [
+                "null",
+                "boolean"
+            ]
+        },
+        "state": {
+            "description": "The workflow state that the Milestone is in.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "started_at_override": {
+            "description": "A manual override for the time/date the Milestone was started.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        },
+        "updated_at": {
+            "description": "The time/date the Milestone was updated.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "categories": {
+            "description": "An array of Categories attached to the Milestone.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "id": {
+            "description": "The unique ID of the Milestone.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64"
+        },
+        "position": {
+            "description": "A number representing the position of the Milestone in relation to every other Milestone within the Workspace.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64"
+        },
+        "stats": {
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "created_at": {
+            "description": "The time/date the Milestone was created.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        }
+    }
+}
