@@ -1,0 +1,110 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "entity_type": {
+            "description": "A string description of this resource.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "id": {
+            "description": "The unique ID of the Epic Workflow.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64"
+        },
+        "created_at": {
+            "description": "The date the Epic Workflow was created.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "updated_at": {
+            "description": "The date the Epic Workflow was updated.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "default_epic_state_id": {
+            "description": "The unique ID of the default Epic State that new Epics are assigned by default.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64"
+        },
+        "epic_states": {
+            "description": "A map of the Epic States in this Epic Workflow.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {
+                "description": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "entity_type": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "name": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "global_id": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "type": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "updated_at": {
+                    "type": [
+                        "null",
+                        "string"
+                    ],
+                    "format": "date-time"
+                },
+                "id": {
+                    "type": [
+                        "null",
+                        "integer"
+                    ]
+                },
+                "position": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "created_at": {
+                    "type": [
+                        "null",
+                        "string"
+                    ],
+                    "format": "date-time"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,131 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "description": {
+            "description": "The description of the file.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "x-nullable": true
+        },
+        "entity_type": {
+            "description": "A string description of this resource.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "story_ids": {
+            "description": "The IDs of the stories this file is attached to.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "parameters": {}
+        },
+        "mention_ids": {
+            "description": "Deprecated: use member_mention_ids.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "parameters": {}
+        },
+        "member_mention_ids": {
+            "description": "The members that are mentioned in the description of the file.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "parameters": {}
+        },
+        "name": {
+            "description": "The name of the linked file.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "thumbnail_url": {
+            "description": "The URL of the file thumbnail, if the integration provided it.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "x-nullable": true
+        },
+        "type": {
+            "description": "The integration type (e.g. google, dropbox, box).",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "size": {
+            "description": "The filesize, if the integration provided it.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64",
+            "x-nullable": true
+        },
+        "uploader_id": {
+            "description": "The UUID of the member that uploaded the file.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "uuid"
+        },
+        "content_type": {
+            "description": "The content type of the image (e.g. txt/plain).",
+            "type": [
+                "null",
+                "string"
+            ],
+            "x-nullable": true
+        },
+        "updated_at": {
+            "description": "The time/date the LinkedFile was updated.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "group_mention_ids": {
+            "description": "The groups that are mentioned in the description of the file.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "parameters": {}
+        },
+        "id": {
+            "description": "The unique identifier for the file.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64"
+        },
+        "url": {
+            "description": "The URL of the file.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "created_at": {
+            "description": "The time/date the LinkedFile was created.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        }
+    }
+}

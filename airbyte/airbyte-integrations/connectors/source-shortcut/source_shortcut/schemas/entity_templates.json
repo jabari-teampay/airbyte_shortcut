@@ -1,0 +1,138 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "entity_type": {
+            "description": "A string description of this resource.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "id": {
+            "description": "The unique identifier for the entity template.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "uuid"
+        },
+        "created_at": {
+            "description": "The time/date when the entity template was created.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "updated_at": {
+            "description": "The time/date when the entity template was last updated.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "name": {
+            "description": "The template's name.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "author_id": {
+            "description": "The unique ID of the member who created the template.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "uuid"
+        },
+        "last_used_at": {
+            "description": "The last time that someone created an entity using this template.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "story_contents": {
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {
+                "description": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "entity_type": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "labels": {
+                    "type": [
+                        "null",
+                        "object"
+                    ],
+                    "properties": {}
+                },
+                "story_type": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "linked_files": {
+                    "type": [
+                        "null",
+                        "object"
+                    ],
+                    "properties": {}
+                },
+                "name": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "label_ids": {
+                    "type": [
+                        "null",
+                        "object"
+                    ],
+                    "properties": {}
+                },
+                "group_id": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "work_state_id": {
+                    "type": [
+                        "null",
+                        "integer"
+                    ]
+                },
+                "files": {
+                    "type": [
+                        "null",
+                        "object"
+                    ],
+                    "properties": {}
+                },
+                "project_id": {
+                    "type": [
+                        "null",
+                        "integer"
+                    ]
+                }
+            }
+        }
+    }
+}

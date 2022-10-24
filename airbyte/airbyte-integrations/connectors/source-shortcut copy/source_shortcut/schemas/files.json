@@ -1,0 +1,117 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "description": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "entity_type": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "story_ids": {
+            "type": [
+                "null",
+                "object"
+            ],
+            "parameters": {}
+        },
+        "mention_ids": {
+            "type": [
+                "null",
+                "object"
+            ],
+            "parameters": {}
+        },
+        "member_mention_ids": {
+            "type": [
+                "null",
+                "object"
+            ],
+            "parameters": {}
+        },
+        "name": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "thumbnail_url": {
+            "type": [
+                "null",
+                "string"
+            ],
+            "x-nullable": true
+        },
+        "size": {
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64"
+        },
+        "uploader_id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "content_type": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "updated_at": {
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "filename": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "group_mention_ids": {
+            "type": [
+                "null",
+                "object"
+            ],
+            "parameters": {}
+        },
+        "external_id": {
+            "type": [
+                "null",
+                "integer"
+            ]
+        },
+        "id": {
+            "type": [
+                "null",
+                "integer"
+            ]
+        },
+        "url": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "created_at": {
+            "description": "The time/date that the File was created.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        }
+    }
+}

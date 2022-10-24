@@ -1,0 +1,572 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "app_url": {
+            "description": "The Shortcut application url for the Story.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "description": {
+            "description": "The description of the story.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "archived": {
+            "description": "True if the story has been archived or not.",
+            "type": [
+                "null",
+                "boolean"
+            ]
+        },
+        "started": {
+            "description": "A true/false boolean indicating if the Story has been started.",
+            "type": [
+                "null",
+                "boolean"
+            ]
+        },
+        "story_links": {
+            "items": {
+                "properties": {
+                    "entity_type": {
+                        "description": "True if the story has been archived or not.",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "object_id": {
+                        "description": "The Shortcut application url for the Story.",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "verb": {
+                        "description": "The description of the story.",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "type": {
+                        "description": "True if the story has been archived or not.",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "updated_at": {
+                        "description": "The description of the story.",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "format": "date-time"
+                    },
+                    "id": {
+                        "description": "The Shortcut application url for the Story.",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "subject_id": {
+                        "description": "True if the story has been archived or not.",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "subject_workflow_state_id": {
+                        "description": "The description of the story.",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "created_at": {
+                        "description": "True if the story has been archived or not.",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "format": "date-time"
+                    }
+                },
+                "type": [
+                    "null",
+                    "object"
+                ]
+            },
+            "type": [
+                "null",
+                "array"
+            ]
+        },
+        "entity_type": {
+            "description": "A string description of this resource.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "labels": {
+            "items": {
+                "properties": {
+                    "app_url": {
+                        "description": "The Shortcut application url for the Story.",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "description": {
+                        "description": "The description of the story.",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "archived": {
+                        "description": "True if the story has been archived or not.",
+                        "type": [
+                            "null",
+                            "boolean"
+                        ]
+                    },
+                    "entity_type": {
+                        "description": "The Shortcut application url for the Story.",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "color": {
+                        "description": "The description of the story.",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "name": {
+                        "description": "True if the story has been archived or not.",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "global_id": {
+                        "description": "The Shortcut application url for the Story.",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "updated_at": {
+                        "description": "The description of the story.",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "format": "date-time"
+                    },
+                    "external_id": {
+                        "description": "True if the story has been archived or not.",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "id": {
+                        "description": "The description of the story.",
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "created_at": {
+                        "description": "True if the story has been archived or not.",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "format": "date-time"
+                    }
+                },
+                "type": [
+                    "null",
+                    "object"
+                ]
+            },
+            "type": [
+                "null",
+                "array"
+            ]
+        },
+        "mention_ids": {
+            "description": "Deprecated: use member_mention_ids.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "member_mention_ids": {
+            "description": "An array of Member IDs that have been mentioned in the Story description.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "story_type": {
+            "description": "The type of story (feature, bug, chore).",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "custom_fields": {
+            "description": "An array of CustomField value assertions for the story.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "linked_files": {
+            "description": "An array of linked files attached to the story.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "workflow_id": {
+            "description": "The ID of the workflow the story belongs to.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64"
+        },
+        "completed_at_override": {
+            "description": "A manual override for the time/date the Story was completed.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        },
+        "started_at": {
+            "description": "The time/date the Story was started.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        },
+        "completed_at": {
+            "description": "The time/date the Story was completed.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        },
+        "name": {
+            "description": "The name of the story.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "completed": {
+            "description": "A true/false boolean indicating if the Story has been completed.",
+            "type": [
+                "null",
+                "boolean"
+            ]
+        },
+        "comments": {
+            "description": "An array of comments attached to the story.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "blocker": {
+            "description": "A true/false boolean indicating if the Story is currently a blocker of another story.",
+            "type": [
+                "null",
+                "boolean"
+            ]
+        },
+        "branches": {
+            "description": "An array of Git branches attached to the story.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "epic_id": {
+            "description": "The ID of the epic the story belongs to.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64",
+            "x-nullable": true
+        },
+        "story_template_id": {
+            "description": "The ID of the story template used to create this story, or null if not created using a template.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "uuid",
+            "x-nullable": true
+        },
+        "external_links": {
+            "description": "An array of external links (strings) associated with a Story",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "previous_iteration_ids": {
+            "description": "The IDs of the iteration the story belongs to.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "requested_by_id": {
+            "description": "The ID of the Member that requested the story.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "uuid"
+        },
+        "iteration_id": {
+            "description": "The ID of the iteration the story belongs to.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64",
+            "x-nullable": true
+        },
+        "tasks": {
+            "description": "An array of tasks connected to the story.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "label_ids": {
+            "description": "An array of label ids attached to the story.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "started_at_override": {
+            "description": "A manual override for the time/date the Story was started.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        },
+        "group_id": {
+            "description": "The ID of the group associated with the story.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "uuid",
+            "x-nullable": true
+        },
+        "workflow_state_id": {
+            "description": "The ID of the workflow state the story is currently in.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64"
+        },
+        "updated_at": {
+            "description": "The time/date the Story was updated.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        },
+        "pull_requests": {
+            "description": "An array of Pull/Merge Requests attached to the story.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "group_mention_ids": {
+            "description": "An array of Group IDs that have been mentioned in the Story description.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "follower_ids": {
+            "description": "An array of UUIDs for any Members listed as Followers.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "owner_ids": {
+            "description": "An array of UUIDs of the owners of this story.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "external_id": {
+            "description": "This field can be set to another unique ID. In the case that the Story has been imported from another tool, the ID in the other tool can be indicated here.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "x-nullable": true
+        },
+        "id": {
+            "description": "The unique ID of the Story.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64"
+        },
+        "lead_time": {
+            "description": "The lead time (in seconds) of this story when complete.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64"
+        },
+        "estimate": {
+            "description": "The numeric point estimate of the story. Can also be null, which means unestimated.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64",
+            "x-nullable": true
+        },
+        "commits": {
+            "description": "An array of commits attached to the story.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "files": {
+            "description": "An array of files attached to the story.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "position": {
+            "description": "A number representing the position of the story in relation to every other story in the current project.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64"
+        },
+        "blocked": {
+            "description": "A true/false boolean indicating if the Story is currently blocked.",
+            "type": [
+                "null",
+                "boolean"
+            ]
+        },
+        "project_id": {
+            "description": "The ID of the project the story belongs to.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64",
+            "x-nullable": true
+        },
+        "deadline": {
+            "description": "The due date of the story.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        },
+        "stats": {
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "cycle_time": {
+            "description": "The cycle time (in seconds) of this story when complete.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64"
+        },
+        "created_at": {
+            "description": "The time/date the Story was created.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "moved_at": {
+            "description": "The time/date the Story was last changed workflow-state.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time",
+            "x-nullable": true
+        }
+    }
+}

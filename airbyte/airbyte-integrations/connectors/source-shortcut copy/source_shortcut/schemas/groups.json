@@ -1,0 +1,149 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "app_url": {
+            "description": "The Shortcut application url for the Group.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "description": {
+            "description": "The description of the Group.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "archived": {
+            "description": "Whether or not the Group is archived.",
+            "type": [
+                "null",
+                "boolean"
+            ]
+        },
+        "entity_type": {
+            "description": "A string description of this resource.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "color": {
+            "description": "The hex color to be displayed with the Group (for example, \"#ff0000\").",
+            "pattern": "^#[a-fA-F0-9]{6}$",
+            "format": "css-color",
+            "minLength": 1,
+            "type": [
+                "null",
+                "string"
+            ],
+            "x-nullable": true
+        },
+        "num_stories_started": {
+            "description": "The number of stories assigned to the group which are in a started workflow state.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64"
+        },
+        "mention_name": {
+            "pattern": "^[a-z0-9\\-\\_\\.]+$",
+            "minLength": 1,
+            "description": "The mention name of the Group.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "name": {
+            "description": "The name of the Group.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "color_key": {
+            "description": "The color key to be displayed with the Group.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "enum": [
+                "blue",
+                "purple",
+                "midnight-blue",
+                "orange",
+                "yellow-green",
+                "brass",
+                "gray",
+                "fuchsia",
+                "yellow",
+                "pink",
+                "sky-blue",
+                "green",
+                "red",
+                "black",
+                "slate",
+                "turquoise"
+            ],
+            "x-nullable": true
+        },
+        "num_stories": {
+            "description": "The total number of stories assigned ot the group.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64"
+        },
+        "num_epics_started": {
+            "description": "The number of epics assigned to the group which are in the started workflow state.",
+            "type": [
+                "null",
+                "integer"
+            ],
+            "format": "int64"
+        },
+        "id": {
+            "description": "The id of the Group.",
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "uuid"
+        },
+        "display_icon": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "member_ids": {
+            "description": "The Member IDs contain within the Group.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "story_workflow_ids": {
+            "description": "The Workflow IDs which have stories assigned to the group.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        },
+        "workflow_ids": {
+            "description": "The Workflow IDs contained within the Group.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "properties": {}
+        }
+    }
+}

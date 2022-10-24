@@ -1,0 +1,165 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "description": {
+            "description": "A description of the workflow.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "entity_type": {
+            "description": "A string description of this resource.",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "project_ids": {
+            "description": "An array of IDs of projects within the Workflow.",
+            "type": [
+                "null",
+                "object"
+            ],
+            "parameters": {}
+        }
+    },
+    "states": {
+        "description": "A map of the states in this Workflow.",
+        "type": [
+            "null",
+            "object"
+        ],
+        "parameters": {
+            "description": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+            },
+            "entity_type": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+            },
+            "verb": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+            },
+            "name": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+            },
+            "global_id": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+            },
+            "num_stories": {
+                "type": [
+                    "null",
+                    "integer"
+                ]
+            },
+            "type": {
+                "type": [
+                    "null",
+                    "string"
+                ]
+            },
+            "updated_at": {
+                "type": [
+                    "null",
+                    "string"
+                ],
+                "format": "date-time"
+            },
+            "id": {
+                "type": [
+                    "null",
+                    "number"
+                ]
+            },
+            "num_story_templates": {
+                "type": [
+                    "null",
+                    "integer"
+                ]
+            },
+            "position": {
+                "type": [
+                    "null",
+                    "integer"
+                ]
+            },
+            "created_at": {
+                "type": [
+                    "null",
+                    "string"
+                ],
+                "format": "date-time"
+            }
+        }
+    },
+    "name": {
+        "description": "The name of the workflow.",
+        "type": [
+            "null",
+            "string"
+        ]
+    },
+    "updated_at": {
+        "description": "The date the Workflow was updated.",
+        "type": [
+            "null",
+            "string"
+        ],
+        "format": "date-time"
+    },
+    "auto_assign_owner": {
+        "description": "Indicates if an owner is automatically assigned when an unowned story is started.",
+        "type": [
+            "null",
+            "boolean"
+        ]
+    },
+    "id": {
+        "description": "The unique ID of the Workflow.",
+        "type": [
+            "null",
+            "integer"
+        ],
+        "format": "int64"
+    },
+    "team_id": {
+        "description": "The ID of the team the workflow belongs to.",
+        "type": [
+            "null",
+            "integer"
+        ],
+        "format": "int64"
+    },
+    "created_at": {
+        "description": "The date the Workflow was created.",
+        "type": [
+            "null",
+            "string"
+        ],
+        "format": "date-time"
+    },
+    "default_state_id": {
+        "description": "The unique ID of the default state that new Stories are entered into.",
+        "type": [
+            "null",
+            "integer"
+        ],
+        "format": "int64"
+    }
+}

@@ -1,0 +1,381 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "An Epic is a collection of stories that together might make up a release, a milestone, or some other large initiative that you are working on.",
+  "type": "object",
+  "properties": {
+    "app_url": {
+      "description": "The Shortcut application url for the Epic.",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "description": {
+      "description": "The Epic's description.",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "archived": {
+      "description": "True/false boolean that indicates whether the Epic is archived or not.",
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "started": {
+      "description": "A true/false boolean indicating if the Epic has been started.",
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "entity_type": {
+      "description": "A string description of this resource.",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "labels": {
+      "description": "An array of Labels attached to the Epic.",
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {}
+    },
+    "mention_ids": {
+      "description": "Deprecated: use member_mention_ids.",
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {}
+    },
+    "member_mention_ids": {
+      "description": "An array of Member IDs that have been mentioned in the Epic description.",
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {}
+    },
+    "project_ids": {
+      "description": "The IDs of Projects related to this Epic.",
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {}
+    },
+    "stories_without_projects": {
+      "description": "The number of stories in this epic which are not associated with a project.",
+      "type": [
+        "null",
+        "integer"
+      ],
+      "format": "int64"
+    },
+    "completed_at_override": {
+      "description": "A manual override for the time/date the Epic was completed.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time",
+      "x-nullable": true
+    },
+    "productboard_plugin_id": {
+      "description": "The ID of the associated productboard integration.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "uuid",
+      "x-nullable": true
+    },
+    "started_at": {
+      "description": "The time/date the Epic was started.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time",
+      "x-nullable": true
+    },
+    "completed_at": {
+      "description": "The time/date the Epic was completed.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time",
+      "x-nullable": true
+    },
+    "name": {
+      "description": "The name of the Epic.",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "global_id": {
+      "x-doc-skip": true,
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "completed": {
+      "description": "A true/false boolean indicating if the Epic has been completed.",
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "productboard_url": {
+      "description": "The URL of the associated productboard feature.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "x-nullable": true
+    },
+    "planned_start_date": {
+      "description": "The Epic's planned start date.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time",
+      "x-nullable": true
+    },
+    "state": {
+      "description": "`Deprecated` The workflow state that the Epic is in.",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "milestone_id": {
+      "description": "The ID of the Milestone this Epic is related to.",
+      "type": [
+        "null",
+        "integer"
+      ],
+      "format": "int64",
+      "x-nullable": true
+    },
+    "requested_by_id": {
+      "description": "The ID of the Member that requested the epic.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "uuid"
+    },
+    "epic_state_id": {
+      "description": "The ID of the Epic State.",
+      "type": [
+        "null",
+        "integer"
+      ],
+      "format": "int64"
+    },
+    "label_ids": {
+      "description": "An array of Label ids attached to the Epic.",
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {}
+    },
+    "started_at_override": {
+      "description": "A manual override for the time/date the Epic was started.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time",
+      "x-nullable": true
+    },
+    "group_id": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "uuid",
+      "x-nullable": true
+    },
+    "updated_at": {
+      "description": "The time/date the Epic was updated.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time",
+      "x-nullable": true
+    },
+    "group_mention_ids": {
+      "description": "An array of Group IDs that have been mentioned in the Epic description.",
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {}
+    },
+    "productboard_id": {
+      "description": "The ID of the associated productboard feature.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "uuid",
+      "x-nullable": true
+    },
+    "follower_ids": {
+      "description": "An array of UUIDs for any Members you want to add as Followers on this Epic.",
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {}
+    },
+    "owner_ids": {
+      "description": "An array of UUIDs for any members you want to add as Owners on this new Epic.",
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {}
+    },
+    "external_id": {
+      "description": "This field can be set to another unique ID. In the case that the Epic has been imported from another tool, the ID in the other tool can be indicated here.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "x-nullable": true
+    },
+    "id": {
+      "description": "The unique ID of the Epic.",
+      "type": [
+        "null",
+        "integer"
+      ],
+      "format": "int64"
+    },
+    "position": {
+      "description": "The Epic's relative position in the Epic workflow state.",
+      "type": [
+        "null",
+        "integer"
+      ],
+      "format": "int64"
+    },
+    "productboard_name": {
+      "description": "The name of the associated productboard feature.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "x-nullable": true
+    },
+    "deadline": {
+      "description": "The Epic's deadline.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time",
+      "x-nullable": true
+    },
+    "stats": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "num_points_done": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        },
+        "num_related_documents": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        },
+        "num_stories_unstarted": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        },
+        "num_stories_total": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        },
+        "last_story_update": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "date-time"
+        },
+        "num_points_started": {
+          "type": [
+            "null",
+            "integer"
+          ],
+          "format": "date-time"
+        },
+        "num_points_unstarted": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        },
+        "num_stories_started": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        },
+        "num_stories_unestimated": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        },
+        "num_points": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        },
+        "num_stories_done": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        }
+      }
+    },
+    "created_at": {
+      "description": "The time/date the Epic was created.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time",
+      "x-nullable": true
+    }
+  }
+}

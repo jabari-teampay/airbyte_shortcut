@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The Member's role in the Workspace.",
+      "type": ["null", "string"]
+    },
+    "name": {
+      "description": "A string description of this resource.",
+      "type": ["null", "string"]
+    },
+    "mention_name": {
+      "description": "True/false boolean indicating whether the Member has been disabled within the Workspace.",
+      "type": ["null", "string"]
+    },
+    "workspace2": {
+      "x-doc-skip": true,
+      "type": ["null", "object"]
+    }
+  }
+}
