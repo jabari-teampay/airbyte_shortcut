@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: source-acceptance-test
+Version: 0.0.0
+Summary: Contains acceptance tests for source connectors.
+Home-page: https://github.com/airbytehq/airbyte
+Author: Airbyte
+Author-email: contact@airbyte.io
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
